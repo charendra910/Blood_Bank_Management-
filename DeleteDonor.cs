@@ -47,12 +47,10 @@ namespace Blood_Management
                 {
                     cn.Open();
 
-                    // Define the SQL query to select data based on the ID
                     string query = "SELECT * FROM AddNewDonor WHERE ID = @ID";
                     SqlCommand cmd = new SqlCommand(query, cn);
                     cmd.Parameters.AddWithValue("@ID", id);
 
-                    // Create a data adapter to fill a dataset with the results
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataSet ds = new DataSet();
                     adapter.Fill(ds);
