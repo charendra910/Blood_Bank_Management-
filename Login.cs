@@ -58,7 +58,6 @@ namespace Blood_Management
                     }
                     else
                     {
-                        // Authentication successful, open the Dashboard form
                         Dashboard dashboardForm = new Dashboard();
                         dashboardForm.Show();
                     }
