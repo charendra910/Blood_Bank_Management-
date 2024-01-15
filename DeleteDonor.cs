@@ -93,7 +93,6 @@ namespace Blood_Management
         {
             try
             {
-                // Check if the Donor ID field is empty
                 if (string.IsNullOrWhiteSpace(txtDonorID.Text))
                 {
                     MessageBox.Show("Please enter a Donor ID to delete.");
