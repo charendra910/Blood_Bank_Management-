@@ -42,7 +42,6 @@ namespace Blood_Management
                 }
                 string connectionstring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"D:\\Blood Bank Management System(C#)\\Blood_Management\\register.mdf\";Integrated Security=True";
 
-                // Create a connection to the database
                 using (SqlConnection cn = new SqlConnection(connectionstring))
                 {
                     cn.Open();
@@ -55,7 +54,6 @@ namespace Blood_Management
                     DataSet ds = new DataSet();
                     adapter.Fill(ds);
 
-                    // Check if any rows were returned
                     if (ds.Tables[0].Rows.Count > 0)
                     {
                       
