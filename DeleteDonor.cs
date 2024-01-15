@@ -109,7 +109,6 @@ namespace Blood_Management
                     {
                         cn.Open();
 
-                        // Define the SQL query to delete the record based on the ID
                         string query = "DELETE FROM AddNewDonor WHERE ID = @ID";
                         SqlCommand cmd = new SqlCommand(query, cn);
                         cmd.Parameters.AddWithValue("@ID", id);
@@ -119,15 +118,14 @@ namespace Blood_Management
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Record deleted successfully.");
-                            // Clear the fields
                             txtName.Clear();
                             txtFather.Clear();
                             txtMother.Clear();
-                            txtDOB.Value = DateTime.Now; // Reset the Date of Birth
+                            txtDOB.Value = DateTime.Now; 
                             txtMobile.Clear();
-                            txtGender.SelectedIndex = -1; // Clear Gender selection
+                            txtGender.SelectedIndex = -1; 
                             txtEmail.Clear();
-                            txtBlood.SelectedIndex = -1; // Clear Blood Group selection
+                            txtBlood.SelectedIndex = -1; 
                             txtCity.Clear();
                             txtAddress.Clear();
                         }
