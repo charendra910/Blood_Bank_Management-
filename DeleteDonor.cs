@@ -76,10 +76,10 @@ namespace Blood_Management
                     else
                     {
                         MessageBox.Show("No records found for the given Donor ID.");
-                        // ClearFields();
+                        
                     }
 
-                    // Close the connection
+                 
                     cn.Close();
                 }
             }
