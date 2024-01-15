@@ -60,7 +60,7 @@ namespace Blood_Management
                     // Check if any rows were returned
                     if (ds.Tables[0].Rows.Count > 0)
                     {
-                        // Populate the fields with the fetched data
+                      
                         DataRow row = ds.Tables[0].Rows[0];
                         txtName.Text = row["Name"].ToString();
                         txtFather.Text = row["FatherName"].ToString();
