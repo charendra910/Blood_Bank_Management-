@@ -31,7 +31,7 @@ namespace Blood_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Check if the checkbox is checked
+            
             if (!checkBox1.Checked)
             {
                 MessageBox.Show("Please check the Terms and Conditions box.");
@@ -80,6 +80,11 @@ namespace Blood_Management
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
